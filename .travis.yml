@@ -1,12 +1,14 @@
+language: c
 os: linux
-sudo: required
-env:
-  global:
-  - GITHUB=github.com
+dist: trusty
+sudo: false
+git:
+  submodules: true
 script:
   - echo "Hi Travis"
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
+  - git checkout master
   - git submodule update --recursive --remote
   - git add -A
   - git commit -a -m "Updated Gist Submodule Directory"
