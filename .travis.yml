@@ -1,0 +1,15 @@
+os: linux
+sudo: required
+language: c
+
+addons:
+  apt:
+    packages:
+    - curl
+    - git
+
+script:
+  - echo "Hi Travis"
+  - echo $PWD
+  - echo $USER
+  
