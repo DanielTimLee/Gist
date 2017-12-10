@@ -11,7 +11,7 @@ script:
   - git checkout master
   - git submodule update --recursive --remote
   - git add -A
-  - git commit -a -m "Updated Gist Submodule Directory"
+  - git commit -a -m "Updated Gist Submodule Directory";echo $?;echo $?;
   - REPO=$(git remote get-url origin | sed -e "s/$GITHUB/$GITHUB_TOKEN@$GITHUB/g")
   - git push $REPO master
   - echo "Gist Submodule Fetch Done!"
