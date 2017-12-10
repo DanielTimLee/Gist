@@ -1,15 +1,15 @@
 os: linux
 sudo: required
-language: c
-
-addons:
-  apt:
-    packages:
-    - curl
-    - git
-
+env:
+  global:
+  - GITHUB=github.com
 script:
   - echo "Hi Travis"
-  - echo $PWD
-  - echo $USER
-  
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "Travis CI"
+  - git submodule update --recursive --remote
+  - git add -A
+  - git commit -a -m "Updated Gist Submodule Directory"
+  - REPO=$(git remote get-url origin | sed -e "s/$GITHUB/$GITHUB_TOKEN@$GITHUB/g")
+  - git push $REPO master
+  - echo "Gist Submodule Fetch Done!"
