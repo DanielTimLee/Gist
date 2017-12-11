@@ -1,3 +1,12 @@
 [submodule "linux"]
 	path = linux
 	url = https://gist.github.com/5dd03d176f1b7142f75908996c84d82a.git
+[submodule "boilerplate"]
+	path = boilerplate
+	url = https://gist.github.com/DanielTimLee/48877527d255fd6ff907aa6c17379da9
+[submodule "misc"]
+	path = misc
+	url = https://gist.github.com/DanielTimLee/a14469e5198bb79f4c89f42ec5a540aa
+[submodule "nginx"]
+	path = nginx
+	url = https://gist.github.com/DanielTimLee/ad16bf06dc0f499329651089b5bb4c66

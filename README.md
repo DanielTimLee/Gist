@@ -10,5 +10,5 @@ At least `bash` and `curl` must be installed before. (`Alpine Linux` or `Ubuntu,
 
 ```shell
 # Run with Sudo!
-bash -c "$(curl -fsSL https://git.io/vbBdd)"
+bash -c "$(curl -fsSL https://git.io/vbRDX)"
 ```
